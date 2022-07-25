@@ -15,6 +15,12 @@ module Data::Pg::Type
       "Int64"
     when "text", "varchar", "bytea", "jsonb", "json"
       "String"
+    when "uuid"
+      "String"
+    when "numeric"
+      "String"
+    when "integer[]", "text[]"
+      "String"
     when /character varying/
       "String"
     when /timestamp/            # timestamp without time zone
