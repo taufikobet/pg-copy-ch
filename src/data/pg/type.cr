@@ -13,7 +13,7 @@ module Data::Pg::Type
       "Int32"
     when "int8", "bigint"
       "Int64"
-    when "text", "varchar", "bytea", "jsonb"
+    when "text", "varchar", "bytea", "jsonb", "json"
       "String"
     when /character varying/
       "String"
